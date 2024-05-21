@@ -32,5 +32,18 @@ namespace WindowsFormsApp1
             chkLab.Checked = false;
             MessageBox.Show("O formulário foi limpo com sucesso", "Mensagem");
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            if (txtComplemento.Text == "" || txtNome.Text =="" || txtNumCadeiras.Text =="" || txtNumPC.Text =="" || txtPredio.Text ==""){
+                MessageBox.Show("Você precisa preencher o formulário inteiro");
+            }
+            else
+            {
+                MessageBox.Show("Enviado com sucesso!");
+            }
+        }
     }
 }
+
+

@@ -16,5 +16,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnCadSalas_Click(object sender, EventArgs e)
+        {
+            Salas s = new Salas();
+            s.ShowDialog();
+        }
     }
 }
